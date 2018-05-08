@@ -4,6 +4,12 @@
 <array>
 	<dict>
 		<key>IP</key>
+		<string>210.22.84.3</string>
+		<key>name</key>
+		<string>self</string>
+	</dict>
+	<dict>
+		<key>IP</key>
 		<string>8.8.8.8</string>
 		<key>name</key>
 		<string>Google</string>

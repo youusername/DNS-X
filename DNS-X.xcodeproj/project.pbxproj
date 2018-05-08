@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		611E7D7E20A14C9200395238 /* change_dns.sh in Resources */ = {isa = PBXBuildFile; fileRef = 611E7D7D20A14C9200395238 /* change_dns.sh */; };
+		611E7DB420A1A92400395238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 611E7DB320A1A92400395238 /* main.m */; };
+		611E7DBE20A1A94E00395238 /* AuthorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 611E7DBD20A1A94E00395238 /* AuthorHelper.m */; };
 		612BFEB5209C4E410033843D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612BFEB4209C4E410033843D /* AppDelegate.swift */; };
 		612BFEB7209C4E410033843D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612BFEB6209C4E410033843D /* ViewController.swift */; };
 		612BFEB9209C4E410033843D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612BFEB8209C4E410033843D /* Assets.xcassets */; };
@@ -14,18 +17,44 @@
 		612BFEC5209C562B0033843D /* dns.plist in Resources */ = {isa = PBXBuildFile; fileRef = 612BFEC4209C562B0033843D /* dns.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		611E7DAF20A1A92400395238 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		611E7D7D20A14C9200395238 /* change_dns.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = change_dns.sh; sourceTree = "<group>"; };
+		611E7DB120A1A92400395238 /* DNS-XHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DNS-XHelper"; sourceTree = BUILT_PRODUCTS_DIR; };
+		611E7DB320A1A92400395238 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		611E7DBB20A1A94E00395238 /* Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
+		611E7DBC20A1A94E00395238 /* AuthorHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorHelper.h; sourceTree = "<group>"; };
+		611E7DBD20A1A94E00395238 /* AuthorHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorHelper.m; sourceTree = "<group>"; };
+		611E7DBF20A1A97D00395238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		611E7DC020A1BF3200395238 /* DNS-X.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DNS-X.entitlements"; sourceTree = "<group>"; };
 		612BFEB1209C4E410033843D /* DNS-X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DNS-X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		612BFEB4209C4E410033843D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		612BFEB6209C4E410033843D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		612BFEB8209C4E410033843D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		612BFEBB209C4E410033843D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		612BFEBD209C4E410033843D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		612BFEBE209C4E410033843D /* DNS_X.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DNS_X.entitlements; sourceTree = "<group>"; };
 		612BFEC4209C562B0033843D /* dns.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dns.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		611E7DAE20A1A92400395238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		612BFEAE209C4E410033843D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,11 +65,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		611E7D7F20A1822B00395238 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		611E7DB220A1A92400395238 /* DNS-XHelper */ = {
+			isa = PBXGroup;
+			children = (
+				611E7DB320A1A92400395238 /* main.m */,
+				611E7DBC20A1A94E00395238 /* AuthorHelper.h */,
+				611E7DBD20A1A94E00395238 /* AuthorHelper.m */,
+				611E7DBF20A1A97D00395238 /* Info.plist */,
+				611E7DBB20A1A94E00395238 /* Launchd.plist */,
+			);
+			path = "DNS-XHelper";
+			sourceTree = "<group>";
+		};
 		612BFEA8209C4E410033843D = {
 			isa = PBXGroup;
 			children = (
 				612BFEB3209C4E410033843D /* DNS-X */,
+				611E7DB220A1A92400395238 /* DNS-XHelper */,
 				612BFEB2209C4E410033843D /* Products */,
+				611E7D7F20A1822B00395238 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				612BFEB1209C4E410033843D /* DNS-X.app */,
+				611E7DB120A1A92400395238 /* DNS-XHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +106,14 @@
 		612BFEB3209C4E410033843D /* DNS-X */ = {
 			isa = PBXGroup;
 			children = (
+				611E7DC020A1BF3200395238 /* DNS-X.entitlements */,
+				611E7D7D20A14C9200395238 /* change_dns.sh */,
 				612BFEB4209C4E410033843D /* AppDelegate.swift */,
 				612BFEB6209C4E410033843D /* ViewController.swift */,
 				612BFEC4209C562B0033843D /* dns.plist */,
 				612BFEB8209C4E410033843D /* Assets.xcassets */,
 				612BFEBA209C4E410033843D /* Main.storyboard */,
 				612BFEBD209C4E410033843D /* Info.plist */,
-				612BFEBE209C4E410033843D /* DNS_X.entitlements */,
 			);
 			path = "DNS-X";
 			sourceTree = "<group>";
@@ -69,6 +121,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		611E7DB020A1A92400395238 /* DNS-XHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 611E7DB520A1A92400395238 /* Build configuration list for PBXNativeTarget "DNS-XHelper" */;
+			buildPhases = (
+				611E7DAD20A1A92400395238 /* Sources */,
+				611E7DAE20A1A92400395238 /* Frameworks */,
+				611E7DAF20A1A92400395238 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DNS-XHelper";
+			productName = "DNS-XHelper";
+			productReference = 611E7DB120A1A92400395238 /* DNS-XHelper */;
+			productType = "com.apple.product-type.tool";
+		};
 		612BFEB0209C4E410033843D /* DNS-X */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 612BFEC1209C4E410033843D /* Build configuration list for PBXNativeTarget "DNS-X" */;
@@ -96,8 +165,16 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "214644496@qq.com";
 				TargetAttributes = {
+					611E7DB020A1A92400395238 = {
+						CreatedOnToolsVersion = 9.3;
+					};
 					612BFEB0209C4E410033843D = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -115,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				612BFEB0209C4E410033843D /* DNS-X */,
+				611E7DB020A1A92400395238 /* DNS-XHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611E7D7E20A14C9200395238 /* change_dns.sh in Resources */,
 				612BFEB9209C4E410033843D /* Assets.xcassets in Resources */,
 				612BFEC5209C562B0033843D /* dns.plist in Resources */,
 				612BFEBC209C4E410033843D /* Main.storyboard in Resources */,
@@ -133,6 +212,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		611E7DAD20A1A92400395238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				611E7DBE20A1A94E00395238 /* AuthorHelper.m in Sources */,
+				611E7DB420A1A92400395238 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		612BFEAD209C4E410033843D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +244,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		611E7DB620A1A92400395238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWJM7PNTRW;
+				INFOPLIST_FILE = "$(SRCROOT)/DNS-XHelper/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.214644496.DNS-XHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		611E7DB720A1A92400395238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWJM7PNTRW;
+				INFOPLIST_FILE = "$(SRCROOT)/DNS-XHelper/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.214644496.DNS-XHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
 		612BFEBF209C4E410033843D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -207,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -261,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -273,16 +389,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "DNS-X/DNS_X.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NWJM7PNTRW;
 				INFOPLIST_FILE = "DNS-X/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.214644496.DNS-X";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -291,16 +410,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "DNS-X/DNS_X.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NWJM7PNTRW;
 				INFOPLIST_FILE = "DNS-X/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.214644496.DNS-X";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -308,6 +430,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		611E7DB520A1A92400395238 /* Build configuration list for PBXNativeTarget "DNS-XHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				611E7DB620A1A92400395238 /* Debug */,
+				611E7DB720A1A92400395238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		612BFEAC209C4E410033843D /* Build configuration list for PBXProject "DNS-X" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

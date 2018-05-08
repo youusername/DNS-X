@@ -28,7 +28,12 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-    <key>LSUIElement</key>
-    <true/>
+	<key>LSUIElement</key>
+	<true/>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>com.214644496.DNS-XHelper</key>
+		<string>identifier &quot;com.214644496.DNS-XHelper&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Mac Developer: jing zhang (BEQVMPBSBG)&quot; and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+	</dict>
 </dict>
 </plist>
